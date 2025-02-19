@@ -403,5 +403,4 @@ export interface UserGuildBaseData {
   user_roles: string[];
   bot_roles: string[];
   channels: GuildChannelWithPermissions[];
-  finished_onboarding: boolean;
 }
