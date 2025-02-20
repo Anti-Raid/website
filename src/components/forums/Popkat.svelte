@@ -13,6 +13,9 @@
 	export let Open: Boolean = true;
 	export let Uploading: boolean = false;
 
+        let userID: string = "unknown";
+        let platform: string = "arforums";
+
 	// File variables to make life easier
 	interface FileTypings {
 		name: string;
@@ -58,7 +61,11 @@
 			// Create fetch request
 			await fetch(`${API_URL}/upload`, {
 				method: 'POST',
-				body: formData
+				body: formData,
+                                headers: {
+                                    "userID": userID,
+                                    "platform": platform
+				},
 			})
 				.then(async (e) => {
 					const resp = await e.json();
