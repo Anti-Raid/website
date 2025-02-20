@@ -63,8 +63,8 @@
 				method: 'POST',
 				body: formData,
                                 headers: {
-                                    userID: userID,
-                                    platform: platform
+                                    "userID": userID,
+                                    "platform": platform
 				},
 			})
 				.then(async (e) => {
