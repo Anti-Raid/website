@@ -4,7 +4,7 @@
 	import Upload from './Popkat.svelte';
 
 	const API_URL =
-		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.antiraid.xyz' : 'http://localhost:5590';
+		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.purrquinox.com' : 'http://localhost:5590';
 
 	export let PostID: string | null;
 	export let Token: string | null;

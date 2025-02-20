@@ -4,7 +4,7 @@ import type { posts, users } from '../../../types/forums/types.interface.js';
 /** @type {import('./$types').PageLoad} */
 export async function load({ params, fetch }) {
 	const API_URL =
-		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.antiraid.xyz' : 'http://localhost:5590';
+		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.purrquinox.com' : 'http://localhost:5590';
 
 	let profilePosts: posts[] | null = null;
 

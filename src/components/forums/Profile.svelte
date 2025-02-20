@@ -5,7 +5,7 @@
 	import type { users, posts } from '../../types/forums/types.interface';
 
 	const API_URL =
-		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.antiraid.xyz' : 'http://localhost:5590';
+		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.purrquinox.com' : 'http://localhost:5590';
 
 	export let Profile: users; // Fetched Profile
 	export let AuthedUser: users | null; // Authenticated User
