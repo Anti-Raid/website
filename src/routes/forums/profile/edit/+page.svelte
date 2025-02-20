@@ -7,7 +7,7 @@
 	import type { PageData } from './$types';
 
 	const API_URL =
-		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.antiraid.xyz' : 'http://localhost:5590';
+		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.purrquinox.com' : 'http://localhost:5590';
 
 	export let data: PageData;
 

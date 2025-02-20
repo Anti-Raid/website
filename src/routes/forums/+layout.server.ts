@@ -5,7 +5,7 @@ import type { users, posts } from '../../types/forums/types.interface';
 export const load = async ({ request, fetch }: any) => {
 	const cookies = cookie.parse(request.headers.get('cookie') || '');
 	const API_URL =
-		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.antiraid.xyz' : 'http://localhost:5590';
+		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.purrquinox.com' : 'http://localhost:5590';
 
 	let posts: posts[];
 

@@ -4,7 +4,7 @@ import type { posts } from '../../../../types/forums/types.interface';
 /** @type {import('./$types').PageLoad} */
 export async function load({ params, fetch }) {
 	const API_URL =
-		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.antiraid.xyz' : 'http://localhost:5590';
+		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.purrquinox.com' : 'http://localhost:5590';
 
 	const post: posts | null = await fetch(`${API_URL}/posts/get?post_id=${params.slug}`).then(
 		async (res: Response) => {

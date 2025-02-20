@@ -82,19 +82,11 @@ export const getDispatchType = (
 				logger.debug('Setting.getDispatchType', 'String.kind', inner.String.kind);
 
 				// Handle the kind
-				if (inner.String.kind == "normal") _setOnDispatchType(dispatchType, 'type', 'string');
-				else if (inner.String.kind == "template")
-					_setOnDispatchType(
-						dispatchType,
-						'type',
-						`string:textarea:template`
-					);
-				else if (inner.String.kind == "templateRef")
-					_setOnDispatchType(
-						dispatchType,
-						'type',
-						`string:templateref`
-					);
+				if (inner.String.kind == 'normal') _setOnDispatchType(dispatchType, 'type', 'string');
+				else if (inner.String.kind == 'template')
+					_setOnDispatchType(dispatchType, 'type', `string:textarea:template`);
+				else if (inner.String.kind == 'templateRef')
+					_setOnDispatchType(dispatchType, 'type', `string:templateref`);
 				else _setOnDispatchType(dispatchType, 'type', inner.String.kind?.toString() || 'string');
 				break;
 			case 'BitFlag':

@@ -17,7 +17,7 @@
 	import Meta from '@components/Meta.svelte';
 
 	const API_URL =
-		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.antiraid.xyz' : 'http://localhost:5590';
+		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.purrquinox.com' : 'http://localhost:5590';
 
 	const auth = getAuth(
 		initializeApp({

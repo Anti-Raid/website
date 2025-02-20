@@ -5,7 +5,7 @@
 	import { PUBLIC_ENVIRONMENT, PUBLIC_WebEmbedAPIKey } from '$env/static/public';
 
 	const API_URL =
-		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.antiraid.xyz' : 'http://localhost:5590';
+		PUBLIC_ENVIRONMENT === 'production' ? 'https://potsypaw.purrquinox.com' : 'http://localhost:5590';
 
 	export let Token: string | null;
 	export let Type: string = 'general';

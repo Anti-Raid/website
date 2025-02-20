@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { CanonicalConfigOption } from '$lib/generated/silverpelt';
+	import { CanonicalConfigOption } from '$lib/generated/types';
 	import { Goto } from './Setting.svelte';
 	import { SettingsExecuteResponse, UserGuildBaseData } from '$lib/generated/types';
 	import SettingsCreateRow from './SettingsCreateRow.svelte';
