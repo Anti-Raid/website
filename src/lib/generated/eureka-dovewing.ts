@@ -4,17 +4,17 @@
 // source: dovetypes.go
 
 export type PlatformStatus = string;
-export const PlatformStatusOnline: PlatformStatus = 'online';
-export const PlatformStatusIdle: PlatformStatus = 'idle';
-export const PlatformStatusDoNotDisturb: PlatformStatus = 'dnd';
-export const PlatformStatusOffline: PlatformStatus = 'offline';
+export const PlatformStatusOnline: PlatformStatus = "online";
+export const PlatformStatusIdle: PlatformStatus = "idle";
+export const PlatformStatusDoNotDisturb: PlatformStatus = "dnd";
+export const PlatformStatusOffline: PlatformStatus = "offline";
 export interface PlatformUser {
-	id: string;
-	username: string;
-	display_name: string;
-	avatar: string;
-	bot: boolean;
-	status: PlatformStatus;
-	flags: string[];
-	extra_data: { [key: string]: any };
+  id: string;
+  username: string;
+  display_name: string;
+  avatar: string;
+  bot: boolean;
+  status: PlatformStatus;
+  flags: string[];
+  extra_data: { [key: string]: any};
 }
